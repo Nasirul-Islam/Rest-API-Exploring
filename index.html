@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest API Exploring</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5447115fcd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <section class="text-center">
-        <h1>AI Universe Hub</h1>
-        <button>Sort By Date</button>
+    <section class="text-center my-5">
+        <h1 class="text-4xl font-semibold">AI Universe Hub</h1>
+        <button class="text-white rounded-lg bg-rose-600 py-2 px-4 my-6">Sort By Date</button>
     </section>
-    <section>
-        <div id="cardContainer" class="">
-            <div class="">card 1</div>
+    <section class="w-11/12 mx-auto">
+        <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="rounded-lg border border-gray-300 p-5">
+                <div class="">
+                    <img class="rounded-lg" src="https://ideascale.com/wp-content/uploads/2023/03/ChatGPT1-600x338.jpeg"
+                        alt="gpt4">
+                </div>
+                <div class="py-3">
+                    <p class="text-2xl font-semibold pb-2">Features</p>
+                    <p>1. Natural language processing</p>
+                    <p>2. Contextual understanding</p>
+                    <p>3. Text generation</p>
+                </div>
+                <hr>
+                <div class="flex justify-between items-center pt-2">
+                    <div class="">
+                        <p class="text-2xl font-semibold">ChatGPT</p>
+                        <p><i class="far fa-calendar-alt"></i> 11/01/2022</p>
+                    </div>
+                    <div class="">
+                        <button id="detailsBtn">
+                            <i class="fas fa-arrow-right text-rose-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="">card 2</div>
             <div class="">card 3</div>
         </div>
-        <button>See More</button>
+        <div class="text-center py-6">
+            <button class="text-white rounded-lg bg-rose-600 py-2 px-4">See More</button>
+        </div>
     </section>
     <script src="script/script.js"></script>
 </body>
+
 </html>
