@@ -7,12 +7,14 @@
     <title>Rest API Exploring</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/5447115fcd.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 </head>
 
 <body>
     <section class="text-center my-5">
         <h1 class="text-4xl font-semibold">AI Universe Hub</h1>
-        <button class="text-white rounded-lg bg-rose-600 py-2 px-4 my-6">Sort By Date</button>
+        <button id="sortByDate" class="text-white rounded-lg bg-rose-600 py-2 px-4 my-6">Sort By Date</button>
     </section>
     <section class="w-11/12 mx-auto">
         <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -44,6 +46,8 @@
         <div class="text-center py-6">
             <button onclick="loadData(true)" class="text-white rounded-lg bg-rose-600 py-2 px-4">See More</button>
         </div>
+    </section>
+    <section id="modal" class=" my-5">
     </section>
     <script src="script/script.js"></script>
 </body>
